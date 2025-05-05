@@ -50,3 +50,16 @@ print(10 % 3)
 print(2 ** 3)
 >>> 8
 ```
+
+## Ordem de Precedência
+
+Na matemática existe uma regra que indicam quais operações devem ser execultadas primeiro. Isso é útil pois ao analisar uma expressão, a depender da ordem das operações o valor pode ser diferente
+
+exemplo:
+
+```
+print(10 - 5 * 2)
+# Qual seria o resultado? 10 ou 0?
+```
+
+Nesse caso o resultado seria 0, pois a Multiplicação, na matemática possui uma procedência maior que a soma
