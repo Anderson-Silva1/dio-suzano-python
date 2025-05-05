@@ -57,9 +57,16 @@ Na matemática existe uma regra que indicam quais operações devem ser execulta
 
 exemplo:
 
-```
+```py
 print(10 - 5 * 2)
 # Qual seria o resultado? 10 ou 0?
 ```
 
 Nesse caso o resultado seria 0, pois a Multiplicação, na matemática possui uma procedência maior que a soma
+
+## Sequencia de Precedência
+
+1. ### Parênteses
+
+    - ()
+    - **MAIS ALTA PRECEDÊNCIA**: Tudo que estiver dentro de Parênteses será avaliado primeiro
