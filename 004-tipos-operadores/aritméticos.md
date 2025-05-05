@@ -70,3 +70,18 @@ Nesse caso o resultado seria 0, pois a Multiplicação, na matemática possui um
 
     - ()
     - **MAIS ALTA PRECEDÊNCIA**: Tudo que estiver dentro de Parênteses será avaliado primeiro
+
+2. ### Exponênciação
+
+    - **
+    - 2 ** 4 = 16
+
+3. ### Multiplicação, Divisão e Módulo
+
+    - *; /; %; //
+    - Estes, entre eles possuem precedência igual, ou seja, quem aparecer primeiro será calculado pelo Python
+
+1. ### Adição e Subtração
+
+    - +; -
+    - São os últimos na ordem de precedência, ou seja, tidas as outras verificações das operações acima serão execultadas primeiro que essas.
