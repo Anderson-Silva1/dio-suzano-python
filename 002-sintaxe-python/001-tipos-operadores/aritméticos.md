@@ -2,49 +2,49 @@
 
 Em Python temos os principais
 
-* Soma
+- Soma
 
 ```py
 print(1 + 1)
 >>> 2
 ```
 
-* Subtração
+- Subtração
 
 ```py
 print(3 - 1)
 >>> 2
 ```
 
-* Multiplicação
+- Multiplicação
 
 ```py
 print(2 * 4)
 >>> 8
 ```
 
-* Divisão
+- Divisão
 
 ```py
 print(10 / 2)
 >>> 5.0
 ```
 
-* Divisão Inteira
+- Divisão Inteira
 
 ```py
 print(10 // 5)
 >>> 5
 ```
 
-* Módulo (Resto)
+- Módulo (Resto)
 
 ```py
 print(10 % 3)
 >>> 1
 ```
 
-* Exponênciação
+- Exponênciação
 
 ```py
 print(2 ** 3)
@@ -68,20 +68,20 @@ Nesse caso o resultado seria 0, pois a Multiplicação, na matemática possui um
 
 1. ### Parênteses
 
-    - ()
-    - **MAIS ALTA PRECEDÊNCIA**: Tudo que estiver dentro de Parênteses será avaliado primeiro
+   - ()
+   - **MAIS ALTA PRECEDÊNCIA**: Tudo que estiver dentro de Parênteses será avaliado primeiro
 
 2. ### Exponênciação
 
-    - **
-    - 2 ** 4 = 16
+   - \*\*
+   - 2 \*\* 4 = 16
 
 3. ### Multiplicação, Divisão e Módulo
 
-    - *; /; %; //
-    - Estes, entre eles possuem precedência igual, ou seja, quem aparecer primeiro será calculado pelo Python
+   - \*; /; %; //
+   - Estes, entre eles possuem precedência igual, ou seja, quem aparecer primeiro será calculado pelo Python
 
-1. ### Adição e Subtração
+4. ### Adição e Subtração
 
-    - +; -
-    - São os últimos na ordem de precedência, ou seja, tidas as outras verificações das operações acima serão execultadas primeiro que essas.
+   - +; -
+   - São os últimos na ordem de precedência, ou seja, tidas as outras verificações das operações acima serão execultadas primeiro que essas.
