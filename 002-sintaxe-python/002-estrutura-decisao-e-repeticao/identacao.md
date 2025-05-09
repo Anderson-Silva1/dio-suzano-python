@@ -36,3 +36,9 @@ int main() {
 ```js
 console.log("Olá, mundo!");
 ```
+
+## Utilizando espaços
+
+Existe uma convenção em Python, que define boas práticas Lara escrita de código na linguagem. 
+
+Neste documento é indicado usar 4 espaços em branco por nível de identação, ou seja, a cada novo bloco adicionamos na linha a baixo 4 novos espaços em branco a mais.
