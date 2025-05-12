@@ -106,12 +106,88 @@ texto_split = texto.split()
 print(texto_split) # ["Curso", "de", "Python", "pela", "DIO"]
 ```
 
-## upper
-
-Torna todas as letras maiúsculas
+Ainda sobre o `split`, podemos escolher o caractere que será usado para separar as palavras de uma string em uma lista de strings
 
 ```py
 texto = "Curso de Python pela DIO"
-texto_upper = texto.upper()
-print(texto_upper) # CURSO DE PYTHON PELA DIO
+texto_split = texto.split(" ") # Nesse caso é um espaço
+print(texto_split) # ["Curso", "de", "Python", "pela", "DIO"]
+
+texto = "Curso-de-Python-pela-DIO"
+texto_split_diferente = texto.split("-") # Nesse caso é um hífen
+print(texto_split_diferente) # ["Curso", "de", "Python", "pela", "DIO"]
+```
+
+Ainda sobre o `split`, podemos ter um limitador máximo de quanto será essa divisão, por índex
+
+```py
+texto = "Curso de Python pela DIO"
+
+print(texto.split(" ", 0)) # ["Curso de Python pela DIO"]
+print(texto.split(" ", 1)) # ["Curso", "de Python pela DIO"]
+print(texto.split(" ", 2)) # ["Curso", "de", "Python pela DIO"]
+print(texto.split(" ", 3)) # ["Curso", "de", "Python", "pela DIO"]
+print(texto.split(" ", 4)) # ["Curso", "de", "Python", "pela",  "DIO"]
+
+print(texto.split()) # ["Curso", "de", "Python", "pela",  "DIO"]
+```
+
+## count
+
+Conta quais caracteres existem dentro de uma STRING
+
+```py
+texto = "Curso de Python pela DIO"
+texto_count = texto.count("o")
+print(texto_count) # 2
+```
+
+Ainda sobre o `count` podemos limitar a verificação a index's específicos
+
+```py
+texto = "Curso de Python pela DIO"
+texto_count = texto.count("o", 0, 10)
+print(texto_count) # 1, pois vai pegar a string "Curso de Py"
+```
+
+## startswith
+
+Retorna um valor boleano caso a string comece com o definido
+
+```py
+texto = "Curso de Python pela DIO"
+
+print(texto.startswith("Curso")) # True
+```
+
+## endswith
+
+Retorna um valor boleano caso a string finalize com o definido
+
+```py
+texto = "Curso de Python pela DIO"
+
+print(texto.startswith("Python")) # False
+```
+
+## find
+
+É usado para dizer se determinada string existe dentro de uma lista ou cadeia de caracteres, e caso existe ela retorna o index (no caso da cadeia de caracteres ela retorna o index da primeira letra), e caso não exista ela retorna -1
+
+```py
+texto = "Curso de Python pela DIO"
+
+print(texto.find("Python")) # 9
+print(texto.find("JavaScript")) # -1
+```
+
+## index
+
+Faz a mesma coisa que o `find` porém quando não é satisfeito a operação, é retornado um erro
+
+```py
+texto = "Curso de Python pela DIO"
+
+print(texto.index("Python")) # 9
+print(texto.index("JavaScript")) # ValueError: substring not found
 ```
