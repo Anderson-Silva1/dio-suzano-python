@@ -63,3 +63,27 @@ idade = 20
 print("Olá!, eu me chamo {nome}, tenho {idade} anos".format(nome = nome, idade = idade))
 # >>> Olá!, eu me chamo Anderson, tenho 20 anos
 ```
+
+Podemos usar dicionários
+
+```py
+pessoa = {
+"nome": "Anderson",
+"idade": 20
+
+print("Olá!, eu me chamo {nome}, tenho {idade} anos".format(**pessoa))
+# >>> Olá!, eu me chamo Anderson, tenho 20 anos
+```
+
+## f'string
+
+Essa é outra forma de interpolar variáveis em Python, com ela podemos usar diretamente a variável dentro da string, porém usamos a letra "f" na frente da string e as variáveis entre colchetes
+
+```py
+nome = "Anderson"
+idade = 20
+
+print(f"Olá me chamo {nome} e tenho {idade} anos de idade.")
+```
+
+Dessa forma fica mais legível e fácil de escrever, fica similar ao template string do JavaScript
