@@ -70,7 +70,7 @@ Podemos usar dicionários
 pessoa = {
 "nome": "Anderson",
 "idade": 20
-
+}
 print("Olá!, eu me chamo {nome}, tenho {idade} anos".format(**pessoa))
 # >>> Olá!, eu me chamo Anderson, tenho 20 anos
 ```
