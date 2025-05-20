@@ -7,3 +7,7 @@ append_list.append([1, 2, 3])
 
 print(append_list) # [1, "Python", [1, 2, 3]]
 
+# clear
+clear_list = append_list
+clear_list.clear()
+print(clear_list) # []
